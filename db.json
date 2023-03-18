@@ -1,0 +1,26 @@
+{
+  "perfil": [
+    {
+        "nombre": "Christian",
+        "email": "Christian@alura.com",
+        "id": 1
+    },
+    {
+        "nombre": "Luris",
+        "email": "Luris@alura.com",
+        "id": 2
+    }
+  ],
+  "productos": [
+    { 
+        "id": 1,
+        "nombre": "some product",
+        "precio": 1
+    },
+    { 
+        "id": 2,
+        "nombre": "some product 2",
+        "precio": 15
+    }
+  ]
+}
