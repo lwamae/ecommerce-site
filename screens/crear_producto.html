@@ -4,9 +4,67 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>AluraGeek Crear Productos</title><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel='stylesheet' type='text/css' media='screen' href='../assets/css/productos.css'>
+    <!---
+    <script type="module" src='../controllers/products-controller.js'></script>
+    -->
 </head>
 <body>
-    <h1>Logueado</h1>
+    <section class="menu">
+        <header class="menu__header">
+            <img src="../assets/img/logo.svg" alt="logo" height="32px">
+        </header>
+        <nav>
+            <form class="menu__nav__form">
+                <button class="menu__nav__login">Menu Administrador</button>
+                <input class="menu__nav__form_input" type="text" placeholder="Buscar..." name="search">
+                <button class="menu__nav__search"type="submit">
+                    <i class="fa fa-search fa-lg"></i>
+                </button>
+            </form>
+        </nav>
+    </section>
+
+    <section class="newproduct">
+        <h3 class="newproduct__title">Agregar nuevo producto</h3>
+        <form class="form" data-newproduct>
+            <input data-url class="newproduct__form_input" type="text" placeholder="URL de la Imagen">
+            <input data-categ class="newproduct__form_input" type="text" placeholder="Categoria">
+            <input data-name class="newproduct__form_input" type="text" placeholder="Nombre del Producto">
+            <input data-price class="newproduct__form_input" type="number" placeholder="Precio">
+            <textarea data-desc rows="5" cols="40" id="descripcion" name="descripcion" placeholder="Descripcion del Producto"></textarea>
+            <button class="newproduct__btn" type="submit">Agregar Producto</button>
+        </form>
+    </section>
+
+    <section class="bottom_menu">
+        <div class="bottom__menu__div">
+            <img src="../assets/img/logo.svg" alt="logo" width="176px">
+            <ul class="bottom__menu__list">
+                <li class="menu__list__item"><a href="#">Quienes Somos</a></li>
+                <li class="menu__list__item"><a href="#">Politica de Privacidad</a></li>
+                <li class="menu__list__item"><a href="#">Programa de Fidelidad</a></li>
+                <li class="menu__list__item"><a href="#">Nuestras Tiendas</a></li>
+                <li class="menu__list__item"><a href="#">Quiero Ser Franquiciado</a></li>
+                <li class="menu__list__item"><a href="#">Anuncie Aqui</a></li>
+            </ul>
+        </div>
+
+        <div class="contacto">
+            <h2 class="contacto__title">Hable Con Nosotros</h2>
+            <form class="contacto__form">
+                <input type="text" placeholder="Nombre" name="name">
+                <textarea rows="5" cols="40" id="mensagem" name="mensaje" placeholder="Escribe tu ensaje"></textarea>
+                <button type="submit">Enviar Mensaje</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>Desarrollado por ♥ Ana M. Loo W. ♥</p>
+        <p>2023</p>
+    </footer>
+
 </body>
 </html>
