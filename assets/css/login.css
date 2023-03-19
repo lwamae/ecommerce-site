@@ -26,16 +26,6 @@ section.menu{
     background-color: #FFF;
 }
 
-.menu__header{
-    display: flex;
-    align-items: center;
-}
-
-.menu__nav{
-    display: flex;
-    align-items: center;
-}
-
 .menu__nav__form_input, .menu__nav__login{
     display: none;
 }
@@ -46,9 +36,14 @@ section.menu{
     cursor: pointer;
 }
 
+.menu__nav__search:hover {
+    display: none;
+    /*check this after adding actions*/
+}
+
 /**/
 section.login {
-    margin: 70px 40px 50px 40px;
+    margin: 50px 40px 50px 40px;
 }
 
 .login__title {
