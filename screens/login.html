@@ -6,7 +6,7 @@
     <title>AluraGeek Login</title>
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
     <link rel='stylesheet' type='text/css' media='screen' href='../assets/css/login.css'>
-    <script src='../service/client_service.js'></script>
+    <script type="module" src='../controllers/login-controller.js'></script>
 </head>
 <body>
     <section class="menu">
@@ -26,32 +26,15 @@
 
     <section class="login">
         <h3 class="login__title">Iniciar Sesión</h3>
-        <form class="form">
-            <input class="menu__login__form_input" type="email" placeholder="Escriba su correo">
-            <input class="menu__login__form_input" type="password" placeholder="Escriba su contraseña">
+        <form class="form" data-login>
+            <input data-name class="menu__login__form_input" type="text" placeholder="Escriba su nombre">
+            <input data-password class="menu__login__form_input" type="password" placeholder="Escriba su contraseña">
             <button class="menu__login__btn" type="submit">Entrar</button>
         </form>
     </section>
 
-    <main >
-        <table class="table">
-            <thead>
-              <tr>
-                <th class="table__column--p">Nombre</th>
-                <th class="table__column--g">Email</th>
-                <th class="table__column--m table__align--right">
-                  <a
-                    href=""
-                    class="simple-button simple-button--add"
-                    >Nuevo Cliente</a
-                  >
-                </th>
-              </tr>
-            </thead>
-            <tbody data-table>
-            </tbody>
-          </table>
-    </main>
+    <section data-profile>
+    </section>
 
     <section class="bottom_menu">
         <div class="bottom__menu__div">
