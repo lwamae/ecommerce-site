@@ -5,11 +5,146 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Home</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel='stylesheet' type='text/css' media='screen' href='../assets/css/index.css'>
-    <script src='main.js'></script>
+    <title>AluraGeek Crear Productos</title><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel='stylesheet' type='text/css' media='screen' href='index.css'>
+    <!---
+    <script type="module" src='../controllers/index-controller.js'></script>
+    -->
 </head>
 <body>
-    <h1>index</h1>
+    <section class="menu">
+        <header class="menu__header">
+            <img src="../assets/img/logo.svg" alt="logo" height="32px">
+        </header>
+        <nav>
+            <form class="menu__nav__form">
+                <button class="menu__nav__login">Login</button>
+                <input class="menu__nav__form_input" type="text" placeholder="Buscar..." name="search">
+                <button class="menu__nav__search" type="submit">
+                    <i class="fa fa-search fa-lg"></i>
+                </button>
+            </form>
+        </nav>
+    </section>
+    
+    <img src="../assets/img/hero.png" alt="logo" width="100%" height="200px">
+    
+    <section class="products">
+        <div class="products__div">
+            <div class="product__categ">
+                <h2>Star Wars</h2>
+                <a class="ver__todo" href="#">Ver Mas</a>
+            </div>
+            <ul class="product__ul">
+                <li class="product__li">
+                    <img class="product__imagen" alt="thumbnail" src="./assets/img/productos/skill1.png"/>
+                    <h4 class="product__titulo">Producto Test</h4>
+                    <p class="product__descripcion">$1.00</p>
+                    <a class="product_ver" href="#">Ver producto</a>
+                </li>
+
+                <li class="product__li">
+                    <img class="product__imagen" alt="thumbnail" src="./assets/img/productos/skill2.png" />
+                    <h4 class="product__titulo">Producto Test</h4>
+                    <p class="product__descripcion">$2.00</p>
+                    <a class="product_ver" href="#">Ver producto</a>
+                </li>
+
+                <li class="product__li">
+                    <img class="product__imagen" alt="thumbnail" src="./assets/img/productos/skill2.png" />
+                    <h4 class="product__titulo">Producto Test</h4>
+                    <p class="product__descripcion">$2.00</p>
+                    <a class="product_ver" href="#">Ver producto</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="products__div">
+            <div class="product__categ">
+                <h2>Consolas</h2>
+                <a class="ver__todo" href="#">Ver Mas</a>
+            </div>
+            <ul class="product__ul">
+                <li class="product__li">
+                    <img class="product__imagen" alt="thumbnail" src="./assets/img/productos/skill1.png"/>
+                    <h4 class="product__titulo">Producto Test</h4>
+                    <p class="product__descripcion">$1.00</p>
+                    <a class="product_ver" href="#">Ver producto</a>
+                </li>
+
+                <li class="product__li">
+                    <img class="product__imagen" alt="thumbnail" src="./assets/img/productos/skill2.png" />
+                    <h4 class="product__titulo">Producto Test</h4>
+                    <p class="product__descripcion">$2.00</p>
+                    <a class="product_ver" href="#">Ver producto</a>
+                </li>
+
+                <li class="product__li">
+                    <img class="product__imagen" alt="thumbnail" src="./assets/img/productos/skill2.png" />
+                    <h4 class="product__titulo">Producto Test</h4>
+                    <p class="product__descripcion">$2.00</p>
+                    <a class="product_ver" href="#">Ver producto</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="products__div">
+            <div class="product__categ">
+                <h2>Diversos</h2>
+                <a class="ver__todo" href="#">Ver Mas</a>
+            </div>
+            <ul class="product__ul">
+                <li class="product__li">
+                    <img class="product__imagen" alt="thumbnail" src="./assets/img/productos/skill1.png"/>
+                    <h4 class="product__titulo">Producto Test</h4>
+                    <p class="product__descripcion">$1.00</p>
+                    <a class="product_ver" href="#">Ver producto</a>
+                </li>
+
+                <li class="product__li">
+                    <img class="product__imagen" alt="thumbnail" src="./assets/img/productos/skill2.png" />
+                    <h4 class="product__titulo">Producto Test</h4>
+                    <p class="product__descripcion">$2.00</p>
+                    <a class="product_ver" href="#">Ver producto</a>
+                </li>
+
+                <li class="product__li">
+                    <img class="product__imagen" alt="thumbnail" src="./assets/img/productos/skill2.png" />
+                    <h4 class="product__titulo">Producto Test</h4>
+                    <p class="product__descripcion">$2.00</p>
+                    <a class="product_ver" href="#">Ver producto</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="bottom_menu">
+        <div class="bottom__menu__div">
+            <img src="../assets/img/logo.svg" alt="logo" width="176px">
+            <ul class="bottom__menu__list">
+                <li class="menu__list__item"><a href="#">Quienes Somos</a></li>
+                <li class="menu__list__item"><a href="#">Politica de Privacidad</a></li>
+                <li class="menu__list__item"><a href="#">Programa de Fidelidad</a></li>
+                <li class="menu__list__item"><a href="#">Nuestras Tiendas</a></li>
+                <li class="menu__list__item"><a href="#">Quiero Ser Franquiciado</a></li>
+                <li class="menu__list__item"><a href="#">Anuncie Aqui</a></li>
+            </ul>
+        </div>
+
+        <div class="contacto">
+            <h2 class="contacto__title">Hable Con Nosotros</h2>
+            <form class="contacto__form">
+                <input type="text" placeholder="Nombre" name="name">
+                <textarea rows="5" cols="40" id="mensagem" name="mensaje" placeholder="Escribe tu ensaje"></textarea>
+                <button type="submit">Enviar Mensaje</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>Desarrollado por ♥ Ana M. Loo W. ♥</p>
+        <p>2023</p>
+    </footer>
     
 </body>
 </html>
