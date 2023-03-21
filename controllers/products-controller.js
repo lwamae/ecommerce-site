@@ -1,14 +1,15 @@
 import { clientServices } from "../service/client_service.js";
 
-clientServices.adminProductos.then((data) => {
-    const pElement = document.querySelector("[data-profile]");
-    console.log(data);
-    data.forEach((perfil) => {
-      getName = perfil.nombre;
-      getPassword = perfil.password;
-  
-      //esto es para mostrar data on the webpage
-      //const getData = dataProfile(perfil.nombre, perfil.email, perfil.password);
-      //pElement.append(getData);
-    });
-  }).catch((error) => alert("Ocurrió un error"));
+const formElement = document.querySelector("[data-newproduct]");
+formElement.addEventListener("submit", (event) => {
+  event.preventDefault();
+  const valueUrl = document.querySelector("[data-url]").value;
+  const valueCateg = document.querySelector("[data-categ]").value;
+  const valueName = document.querySelector("[data-name]").value;
+  const valuePrice = document.querySelector("[data-price]").value;
+  const valueDesc = document.querySelector("[data-desc]").value;
+
+  clientServices.crearProductos(valueUrl, valueCateg, valueName, valuePrice, valueDesc)
+    .then(respuesta => console.log(respuesta))
+    .catch(error => console.log(error));
+});

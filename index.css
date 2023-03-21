@@ -85,8 +85,13 @@ section.products {
     width: 47%;
 }
 
-.product__imagen{
+.product__imagen, .product__precio{
     width: 100%;
+    margin-bottom: 8px;
+}
+
+.product_ver{
+    color: #2A7AE4;
 }
 
 /**/
