@@ -10,6 +10,9 @@ formElement.addEventListener("submit", (event) => {
   const valueDesc = document.querySelector("[data-desc]").value;
 
   clientServices.crearProductos(valueUrl, valueCateg, valueName, valuePrice, valueDesc)
-    .then(respuesta => console.log(respuesta))
+    .then(() => {
+      window.location.href = "../index.html";
+    })
     .catch(error => console.log(error));
 });
+

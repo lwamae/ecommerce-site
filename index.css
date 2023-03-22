@@ -56,6 +56,10 @@ section.menu nav {
     display: none;
 }
 
+.promo-img{
+    height: 220px;
+}
+
 /**/
 section.products {
     margin: 0 16px 16px 16px;
@@ -171,33 +175,71 @@ form.contacto__form button {
 
 /*Tablet*/
 @media (min-width:768px){
-    body {
-        padding: 24px;
+
+    .menu__header{
+        margin-left: 20px;
     }
 
-    .section__menu nav form.input[type=text] {
-        padding: 6px;
-        margin-top: 8px;
-        font-size: 17px;
-        border: none;
+    .promo-img{
+        height: 400px;
+    }
+
+    .menu__nav__form_input, .menu__nav__search{
+        display: flex;
+        float: left;
+        height: 30px;
+        align-items: center;
+    }
+
+    section.menu form input {
+        border: transparent;
+        flex-grow: 1;
+        width: 50%;
+        text-indent: 12px;
+        background-color: rgb(238, 238, 238);
+    }
+    
+    section.menu form input:focus {
+        border-bottom: solid 2px #2A7AE4;
+    }
+
+    /**/
+    section.products {
+        margin: 32px;
+    }
+
+    .product__li {
+        width: 23%;
     }
 
     /**/
     section.bottom_menu {
-        padding: 16px;
         display: flex;
-        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        padding: 32px;
     }
 
+    .bottom__menu__list{
+        text-align: left;
+        margin-top: 16px;
+        margin-bottom: 32px;
+    }
+
+    .contacto {
+        margin-left: 62px;
+    }
 }
 
 /*Desktop*/
 @media (min-width:1024px){
-    body {
-        padding: 24px 44px 24px 44px;
-    }
 
-    main {
+
+
+
+
+
+    section.bottom_menu {
         display: flex;
         justify-content: center;
         flex-direction: row;

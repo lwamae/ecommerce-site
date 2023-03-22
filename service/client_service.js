@@ -5,12 +5,12 @@ const adminProductos = () =>
   fetch("http://localhost:3000/productos").then((respuesta) => respuesta.json());
 
 const crearProductos = (url, categ, nombre, precio, desc) => {
-  fetch("http://localhost:3000/productos", {
+  return fetch("http://localhost:3000/productos", {
     method: "POST",
     headers: {
-      "Content-Type": "application/json"
+      "Content-Type": "application/json",
     },
-    body: JSON.stringify({url, categ, nombre, precio, desc, id: uuid.v4()}),
+    body: JSON.stringify({ url, categ, nombre, precio, desc, id: uuid.v4() }),
   });
 };
 

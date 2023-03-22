@@ -17,9 +17,24 @@ clientServices.adminProductos().then((data) => {
   const pElement = document.querySelector("[data-profile]");
   console.log(data);
   data.forEach((perfil) => {
-    if(perfil.categ == "variados"){
-      console.log("variados");
-    }
+    const getData = dataProfile(perfil.nombre, perfil.precio, perfil.categ, perfil.desc, perfil.id, perfil.url);
+    pElement.append(getData);
+  });
+}).catch((error) => alert("Ocurrió un error: " + error));
+
+clientServices.adminProductos().then((data) => {
+  const pElement = document.querySelector("[data-categ-consolas]");
+  console.log(data);
+  data.forEach((perfil) => {
+    const getData = dataProfile(perfil.nombre, perfil.precio, perfil.categ, perfil.desc, perfil.id, perfil.url);
+    pElement.append(getData);
+  });
+}).catch((error) => alert("Ocurrió un error: " + error));
+
+clientServices.adminProductos().then((data) => {
+  const pElement = document.querySelector("[data-categ-diversos]");
+  console.log(data);
+  data.forEach((perfil) => {
     const getData = dataProfile(perfil.nombre, perfil.precio, perfil.categ, perfil.desc, perfil.id, perfil.url);
     pElement.append(getData);
   });
