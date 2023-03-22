@@ -159,16 +159,6 @@ form.contacto__form button {
 
 /*Tablet*/
 @media (min-width:768px){
-    body {
-        padding: 24px;
-    }
-
-    .section__menu nav form.input[type=text] {
-        padding: 6px;
-        margin-top: 8px;
-        font-size: 17px;
-        border: none;
-    }
 
     /**/
     section.bottom_menu {
@@ -177,20 +167,28 @@ form.contacto__form button {
         align-items: center;
     }
 
+    /**/
+    section.bottom_menu {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        padding: 32px;
+    }
+
+    .bottom__menu__list{
+        text-align: left;
+        margin-top: 16px;
+        margin-bottom: 32px;
+    }
+
+    .contacto {
+        margin-left: 62px;
+    }
+
 }
 
 /*Desktop*/
 @media (min-width:1024px){
-    body {
-        padding: 24px 44px 24px 44px;
-    }
-
-    main {
-        display: flex;
-        justify-content: center;
-        flex-direction: row;
-        padding-bottom: 30px;
-    }
-
+    
     
 }

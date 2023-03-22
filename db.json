@@ -55,30 +55,6 @@
       "precio": "12",
       "desc": "descrip",
       "id": "b6880da3-8b24-4219-9f13-57cc0aa1ac0c"
-    },
-    {
-      "url": "./assets/img/productos/skill1.png",
-      "categ": "star wars",
-      "nombre": "Nombre del producto",
-      "precio": "12",
-      "desc": "descrip",
-      "id": "a7a4d26c-cea5-4a71-a3dd-aaf136672004"
-    },
-    {
-      "url": "./assets/img/productos/skill1.png",
-      "categ": "star wars",
-      "nombre": "Nombre del producto",
-      "precio": "12",
-      "desc": "descrip",
-      "id": "954eb559-3102-4527-a967-8e3975ecbe8b"
-    },
-    {
-      "url": "./assets/img/productos/skill1.png",
-      "categ": "star wars",
-      "nombre": "Nombre del producto",
-      "precio": "12",
-      "desc": "descrip",
-      "id": "99af4aba-374f-4908-a288-eb400ee0e25a"
     }
   ]
 }

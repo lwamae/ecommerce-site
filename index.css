@@ -234,17 +234,39 @@ form.contacto__form button {
 /*Desktop*/
 @media (min-width:1024px){
 
+    .menu__header{
+        margin-left: 20px;
+    }
 
+    .promo-img{
+        content:url("../assets/img/hero-desktop.png");
+        height: 340px;
+    }
 
+    /**/
+    section.products {
+        margin: 32px 84px 32px 84px;
+    }
 
+    .product__li {
+        width: 15%;
+    }
 
-
+    /**/
     section.bottom_menu {
         display: flex;
         justify-content: center;
         flex-direction: row;
-        padding-bottom: 30px;
+        padding: 32px;
     }
 
-    
+    .bottom__menu__list{
+        text-align: left;
+        margin-top: 16px;
+        margin-bottom: 32px;
+    }
+
+    .contacto {
+        margin-left: 62px;
+    }
 }
