@@ -1,4 +1,4 @@
-import { clientServices } from "../service/client_service.js";
+import { clientServices } from "./service/client_service.js";
 
 const formElement = document.querySelector("[data-newproduct]");
 formElement.addEventListener("submit", (event) => {
@@ -11,7 +11,7 @@ formElement.addEventListener("submit", (event) => {
 
   clientServices.crearProductos(valueUrl, valueCateg, valueName, valuePrice, valueDesc)
     .then(() => {
-      window.location.href = "../index.html";
+      window.location.href = "./index.html";
     })
     .catch(error => console.log(error));
 });

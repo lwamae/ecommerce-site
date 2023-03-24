@@ -1,4 +1,4 @@
-import { clientServices } from "../service/client_service.js";
+import { clientServices } from "./service/client_service.js";
 
 let getName, getPassword;
 
