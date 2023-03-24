@@ -214,5 +214,8 @@ form.contacto__form button {
 
 /*Desktop*/
 @media (min-width:1024px){
+    section.newproduct{
+        margin: 54px 256px 54px 256px;
+    }
     
 }
