@@ -1,4 +1,4 @@
-import { clientServices } from "./service/client_service.js";
+import { clientServices } from "../service/client_service.js";
 
 const dataProfile = (nombre, precio, categ, desc, id, url) => {
     const createLi = document.createElement("li");
