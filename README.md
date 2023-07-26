@@ -1,6 +1,8 @@
 # ecommerce-site
 Challenge Alura + Oracle: Ecommerce Site
 
-<p>Testear localmente con json server</p>
+Aplicando conocimentos de consumo de APIs y haciendo CRUD con Json Server de manera local.
+Creacion de una REST API para aprendizaje de las comunicaciones asincronicas, fetching, async and await.
 
-<p>Actualizando... new fixes coming</p>
+<p>El proyectito aun se mantiene actualizando y arreglandosele errores</p>
+<p>Testear localmente al instalar: npm i json-server</p>
